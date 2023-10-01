@@ -1,0 +1,17 @@
+.section {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+}

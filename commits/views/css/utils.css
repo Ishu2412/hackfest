@@ -1,0 +1,39 @@
+.text {
+    color: #183D3D;
+    font-size: 20px;
+}
+
+.heading {
+    color: #9EDDFF;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+}
+
+.btn {
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.btn-big {
+    padding: 18px 36px;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #088395;
+    box-shadow: 0 3px 5px rgba(0,0,0,.1);
+    transition: background-color .15s;
+}
+
+.btn-blue:hover {
+    background-color: #176B87;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

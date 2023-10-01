@@ -1,0 +1,23 @@
+{
+  "name": "hackfest",
+  "version": "1.0.0",
+  "description": "github api integration",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ishu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "node-fetch": "^3.3.2",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.1.12",
+    "socket.io": "^4.7.2"
+  }
+}

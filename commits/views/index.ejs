@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Latest Commits</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/utils.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Mooli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <h1 class="heading">GitHub Latest Commits</h1>
+
+      <% if (!user) { %>
+      <a href="/auth/github"><button class="btn btn-big btn-blue">Authorize with GitHub</button></a>
+      
+      <% } else { %>
+        <h2 style="font-size: 36px; color: #B5CB99">Welcome, <%= user.login %>!</h2>
+        <h3 style="font-size: 30px; color: #B5CB99">Your Repositories:</h3>
+      </div>
+      <div class="main">
+      <ul>
+        <%for (const repo of repositories) { %>
+        <div class="card">
+          <h2 style="color: #9EDDFF;"><%= repo.full_name %>:</h2>
+          <% let i = 1 %> <%for (const commit of repo.commits) {%>
+          <li>SHA: <%= commit.sha %></li>
+          <li>Author: <%= commit.commit.author.name %></li>
+          <li>Message: <%= commit.commit.message %></li>
+        </div>
+        <% i++ %> <% if(i == 5) %> <% break %> <%}%> <%}%>
+      </ul>
+      <% } %> 
+    </div>
+  </body>
+</html>

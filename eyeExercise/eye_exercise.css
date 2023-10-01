@@ -1,0 +1,71 @@
+* {
+    font-family: 'Mooli', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* min-height: 100vh; */
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.exercise-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.exercise-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.exercise-card h2 {
+    margin-top: 0;
+}
+
+.exercise-gif {
+    text-align: center;
+}
+
+#live-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('background.gif');
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+
+#background-music {
+    width: 20%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+  
