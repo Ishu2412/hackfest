@@ -10,7 +10,7 @@ html {
 
 .top {
     height: 90vh;
-    background-image: url('https://i.pinimg.com/564x/ba/81/21/ba812118ed4af6eeb24a57eae2de1424.jpg');
+    background-image: url('/img/photo.jpg');
     background-repeat: none;
     background-size: cover;
     padding-top: 20px;
